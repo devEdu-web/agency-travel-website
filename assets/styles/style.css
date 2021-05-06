@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: calc(100vh - 80px);
+    background-image: url(../images/header-image.jpg);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    /* background-color: green; */
+    
+}
+
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    color: white;
+    font-weight: 300;
+    /* background-color: red; */
+}
+
+li{
+    font-size: 1.5em;
+}
+
+.agency-quote {
+    max-width: 450px;
+    /* background-color: green; */
+    text-align: center;
+    margin: 150px auto;
+    color: white;
+}
+
+.agency-quote h1{
+    font-size: 3em;
+    margin-bottom: 16px;
+}
+
+.agency-quote p {
+    font-size: 1.3em;
+    margin-bottom: 32px;
+    font-weight: 200;
+}
+
+.agency-quote button {
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    background-color: #F25C05;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 500;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    li{
+        font-size: 0.8em;
+    }
+}
