@@ -16,4 +16,4 @@
 1. Compreender o uso e o significado de tags semânticas como o **Header** e o **Nav**;
 
 
-Esse foi apenas um dos primeiros projetos que eu criei para colocar em prática meus conhecimentos. Já tenho alguns planos de projetos futuros, que também incrementem o **Javascript** para criar uma interação direta com os usuários.
+Esse foi apenas um dos primeiros projetos que eu criei para colocar em prática meus conhecimentos. Já tenho alguns planos de projetos futuros, que também incrementem o **Javascript** para criar uma interação direta com os usuários. Fico bastante contente e orgulhoso em finalizar meu primeiro um projeto um pouco mais completo e completamente autoral, buscando apenas algumas inspirações para poder criá-lo. Espero futuramente construir sites e aplicações mais completas e aprofundadas.
