@@ -347,7 +347,25 @@ footer{
 
 
 
+@media screen and (min-width: 1500px) {
+    .agency-quote {
+        font-size: 1.7em;
+        max-width: 850px;
 
+    }
+    .packages-itens{
+        height: 50vh;
+        font-size: 1.2em;
+    }
+    .reviews-itens{
+        font-size: 1.5em;
+    }
+
+    .agency-quote button{
+        width: 40%;
+    }
+    
+}
 
 
 
