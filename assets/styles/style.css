@@ -178,6 +178,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 32px;
 }
 
 .diferencial h1{
@@ -210,6 +211,65 @@ a:hover{
     margin-bottom: 30px;
 }
 
+.reviews{
+    position: relative;
+    /* background-color: blue; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews h1{
+    font-size: 2.5em;
+    position: absolute;
+    top: 5px;
+    color: #566073;
+    /* margin-bottom: 16px; */
+}
+
+.reviews-itens {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    /* background-color: red; */
+}
+
+.review-1, .review-2, .review-3 {
+    color: white;
+    text-align: center;
+    min-height: 50vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1B2E40;
+    border-radius: 20px;
+}
+
+span{
+    color: #F2B591;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 @media screen and (max-width: 1100px) {
     .packages-itens {
@@ -225,6 +285,13 @@ a:hover{
     .packages-itens {
         width: 35vw;
     }
+    .reviews-itens{
+        gap: 50px;
+    }
+    .review-1, .review-2, .review-3 {
+        width: 28vw;
+    }
+
 }
 
 
@@ -246,12 +313,26 @@ a:hover{
         flex-direction: column;
         gap: 100px;
     }
+    .reviews{
+        height: 200vh;
+    }
+    .reviews-itens{
+        flex-direction: column;
+    }
+    .review-1, .review-2, .review-3 {
+        width: 50vw;
+    }
 }
+
+
 
 @media screen and (max-width: 550px) {
     .packages-itens {
         width: 65vw;
         height: 65vh;
+    }
+    .review-1, .review-2, .review-3 {
+        width: 60vw;
     }
 }
 
@@ -274,6 +355,9 @@ a:hover{
     }
     .diferencial h2{
         font-size: 1.3em;
+    }
+    .review-1, .review-2, .review-3 {
+        width: 80vw;
     }
 }
 
