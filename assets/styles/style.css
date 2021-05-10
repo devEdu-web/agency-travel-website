@@ -7,10 +7,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #CAD6DB;
+}
+
 header{
     height: calc(100vh - 80px);
     background-image: url(../images/header-image.jpg);
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 nav{
@@ -74,12 +79,134 @@ a:hover{
     font-weight: 500;
 }
 
+.packages{
+    min-height: 100vh;
+}
+
+.packages-container{
+    /* width: 100%; */
+    /* background-color: yellow; */
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 25px;
+}
+
+.packages-itens{
+    position: relative;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: #1B2E40;
+    
+
+}
+
+.travel-image{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+    border-radius: 20px 20px 0 0;
+}
+
+.travel-1{
+    background-image: url(../images/fuuji.jpg);
+}
+
+.travel-2{
+    background-image: url(../images/hawaii.jpg);
+}
+
+.travel-3{
+    background-image: url(../images/londres.jpg);
+}
+
+.travel-4{
+    background-image: url(../images/oslo.jpg);
+}
+
+.travel-5{
+    background-image: url(../images/alps.jpg);
+}
+
+.travel-6{
+    background-image: url(../images/canyon.jpg);
+}
+
+.travel-info {
+    height: 60%;
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.travel-info h1, p{
+    margin-bottom: 20px;
+}
+
+.travel-info p {
+    font-weight: 100;
+    opacity: 80%;
+}
+
+.travel-info h2 {
+    color: #F2B591;
+    position: absolute;
+    /* align-self: flex-end; */
+    margin-right: 20px;
+    bottom: calc(0% + 10px);
+    right: calc(0% + 10px);
+}
+
+/* 
+@media screen and (max-width: 1100px) {
+    .packages-itens {
+        height: 75vh;
+    }
+} */
 
 
+@media screen and (max-width: 1100px) {
+    .packages-container{
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    .packages-itens {
+        width: 35vw;
+    }
+}
 
+
+@media screen and (max-width: 740px) {
+    .packages-container{
+        grid-template: 1fr 1fr 1fr / 1fr ;
+        
+    }
+    .packages-itens {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .packages-itens {
+        width: 65vw;
+        height: 65vh;
+    }
+}
 
 @media screen and (max-width: 500px) {
     li{
         font-size: 0.8em;
     }
+    .packages-itens {
+        height: 70vh;
+        width: 80vw;
+    }
 }
+
