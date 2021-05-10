@@ -254,6 +254,93 @@ span{
     font-weight: 700;
 }
 
+.contact{
+    height: 100vh;
+    background-image: url(../images/contato-background-opacity35.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.contact-itens{
+    /* background-color: rgba(255, 0, 0, 0.342); */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.address, .phone, .email{
+    display: flex;
+    align-items: center;
+    color: white;
+    /* background-color: blue; */
+}
+
+.address, .phone, .email p {
+    font-weight: 200;
+}
+
+
+.address-info, .email-info, .phone-info{
+    margin-left: 10px;
+    /* background-color: yellow; */
+}
+
+.address-info{
+    max-width: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 25vw;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+input{
+    padding: 8px 20px;
+    border-radius: 50px;
+    
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+    width: 80%;
+    border-radius: 20px;
+}
+
+textarea {
+    padding: 10px;
+}
+
+[type="submit"] {
+    background-color: #F25C05;
+    width: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+footer{
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 700;
+}
 
 
 
@@ -262,20 +349,6 @@ span{
 
 
 
-
-
-
-
-
-
-
-
-/* 
-@media screen and (max-width: 1100px) {
-    .packages-itens {
-        height: 75vh;
-    }
-} */
 
 
 @media screen and (max-width: 1100px) {
@@ -290,6 +363,16 @@ span{
     }
     .review-1, .review-2, .review-3 {
         width: 28vw;
+    }
+    form{
+        width: 30vw;
+    }
+    .contact-itens {
+        width: 30vw;
+        font-size: 0.9em;
+    }
+    .contact-icon{
+        width: 100px;
     }
 
 }
@@ -322,8 +405,34 @@ span{
     .review-1, .review-2, .review-3 {
         width: 50vw;
     }
+    form{
+        width: 40vw;
+    }
+    .contact-itens {
+        width: 35vw;
+        font-size: 0.8em;
+    }
+    .contact-icon{
+        width: 80px;
+    }
 }
 
+@media screen and (max-width:620px) {
+    .contact{
+        flex-direction: column;
+        height: 150vh;
+    }
+    form{
+        width: 60vw;
+    }
+    .contact-itens {
+        width: 70vw;
+        font-size: 0.9em;
+    }
+    .contact-icon{
+        width: 90px;
+    }
+}
 
 
 @media screen and (max-width: 550px) {
@@ -358,6 +467,17 @@ span{
     }
     .review-1, .review-2, .review-3 {
         width: 80vw;
+    }
+
+    form{
+        width: 80vw;
+    }
+    .contact-itens {
+        width: 75vw;
+        font-size: 0.8em;
+    }
+    .contact-icon{
+        width: 80px;
     }
 }
 
