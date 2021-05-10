@@ -54,7 +54,7 @@ li{
 
 .agency-quote p {
     font-size: 1.3em;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     font-weight: 200;
 }
 
@@ -90,6 +90,7 @@ a:hover{
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     justify-items: center;
     gap: 25px;
+    margin-bottom: 50px;
 }
 
 .packages-itens{
@@ -98,7 +99,7 @@ a:hover{
     height: 60vh;
     border-radius: 20px;
     background-color: #1B2E40;
-    
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.548);
 
 }
 
@@ -163,6 +164,50 @@ a:hover{
     margin-right: 20px;
     bottom: calc(0% + 10px);
     right: calc(0% + 10px);
+    font-weight: 900;
+}
+
+.diferencial{
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    background-image: url(../images/background-diferencial-35-full.jpg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.diferencial h1{
+    position: absolute;
+    top: 20px;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+
+.diferencial-itens{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    /* display: inline-block; */
+}
+
+.diferencial-1, .diferencial-2, .diferencial-3 {
+    max-width: 15vw;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.diferencial-icon{
+    margin-bottom: 30px;
 }
 
 /* 
@@ -194,6 +239,13 @@ a:hover{
     header{
         height: calc(90vh);
     }
+    .diferencial {
+        min-height: 180vh;
+    }
+    .diferencial-itens{
+        flex-direction: column;
+        gap: 100px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -214,6 +266,15 @@ a:hover{
     header{
         height: calc(100vh);
     }
+    .diferencial h1{
+        font-size: 1.7em;
+    }
+    .diferencial-icons{
+        width: 90px;
+    }
+    .diferencial h2{
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 330px) {
@@ -224,5 +285,8 @@ a:hover{
 
     header{
         height: calc(130vh);
+    }
+    .diferencial h1{
+        font-size: 1.5em;
     }
 }
