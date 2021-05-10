@@ -191,6 +191,9 @@ a:hover{
     .packages-itens {
         width: 60vw;
     }
+    header{
+        height: calc(90vh);
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -208,5 +211,18 @@ a:hover{
         height: 70vh;
         width: 80vw;
     }
+    header{
+        height: calc(100vh);
+    }
 }
 
+@media screen and (max-width: 330px) {
+    li{
+    font-size: 0.6em;
+    
+    }
+
+    header{
+        height: calc(130vh);
+    }
+}
